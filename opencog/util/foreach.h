@@ -11,7 +11,7 @@ namespace boost {
 // https://svn.boost.org/trac/boost/ticket/6131  for details.
 // See also https://bugs.launchpad.net/opencog/+bug/1057640
 #if (BOOST_VERSION/100 != 1048) && (BOOST_VERSION/100 != 1049)
-namespace BOOST_FOREACH = foreach;
+//namespace BOOST_FOREACH = foreach;
 #endif
 
 
