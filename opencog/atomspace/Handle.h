@@ -121,7 +121,7 @@ inline std::size_t hash_value(Handle const& h)
 
 } // namespace opencog
 
-namespace std { 
+namespace std {
 inline std::ostream& operator<<(std::ostream& out, const opencog::Handle& h)
 {
     out << h.value();
@@ -130,7 +130,7 @@ inline std::ostream& operator<<(std::ostream& out, const opencog::Handle& h)
 
 template<>
 inline std::size_t std::hash<opencog::Handle>::operator()(opencog::Handle h) const
-{  
+{
    return (std::size_t) h.value();
 }
 

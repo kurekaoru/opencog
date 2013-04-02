@@ -8,27 +8,27 @@ INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR})
 #
 ADD_SUBDIRECTORY (util)
 ADD_SUBDIRECTORY (comboreduct)
-ADD_SUBDIRECTORY (reasoning)
+#ADD_SUBDIRECTORY (reasoning)
 ADD_SUBDIRECTORY (learning)
 
 IF (HAVE_ATOMSPACE)
-    ADD_SUBDIRECTORY (atomspace)
-    ADD_SUBDIRECTORY (benchmark)
-    ADD_SUBDIRECTORY (query)
-    ADD_SUBDIRECTORY (nlp)
-    ADD_SUBDIRECTORY (persist)
+    #ADD_SUBDIRECTORY (atomspace)
+    #ADD_SUBDIRECTORY (benchmark)
+    #ADD_SUBDIRECTORY (query)
+    #ADD_SUBDIRECTORY (nlp)
+    #ADD_SUBDIRECTORY (persist)
 ENDIF (HAVE_ATOMSPACE)
 
 IF (HAVE_ATTENTION)
-    ADD_SUBDIRECTORY (dynamics)
+    #ADD_SUBDIRECTORY (dynamics)
 ENDIF (HAVE_ATTENTION)
 
 IF (HAVE_SERVER)
-    ADD_SUBDIRECTORY (server)
+    #ADD_SUBDIRECTORY (server)
 ENDIF(HAVE_SERVER)
 
 IF (HAVE_WEB)
-    ADD_SUBDIRECTORY (web)
+    #ADD_SUBDIRECTORY (web)
 ENDIF (HAVE_WEB)
 
 # There is nothing in this directory?
@@ -48,12 +48,12 @@ IF (HAVE_CYTHON)
 ENDIF (HAVE_CYTHON)
 
 IF (HAVE_SERVER)
-    ADD_SUBDIRECTORY (spacetime)
-    ADD_SUBDIRECTORY (spatial)
+    #ADD_SUBDIRECTORY (spacetime)
+    #ADD_SUBDIRECTORY (spatial)
 ENDIF (HAVE_SERVER)
 
 IF (HAVE_EMBODIMENT)
-	ADD_SUBDIRECTORY (embodiment)
+        #ADD_SUBDIRECTORY (embodiment)
 ENDIF (HAVE_EMBODIMENT)
 
 # Graphics and visualization subsystems
