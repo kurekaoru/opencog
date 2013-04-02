@@ -508,8 +508,6 @@ SET(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib/opencog")
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
-ADD_SUBDIRECTORY(opencog)
-
 # MOSES-DEV----------------------------------------------------------------------
 # Compile the following
 SET(HAVE_COMBOREDUCT 1)
@@ -532,7 +530,7 @@ SET(HAVE_UBIGRAPH 0)
 SET(HAVE_WEB 0)
 # --------------------------------------------------------------------------------
 
-
+ADD_SUBDIRECTORY(opencog)
 ADD_SUBDIRECTORY(lib)
 
 ADD_CUSTOM_TARGET(tests)
