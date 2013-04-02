@@ -509,6 +509,30 @@ SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib/opencog")
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 ADD_SUBDIRECTORY(opencog)
+
+# MOSES-DEV----------------------------------------------------------------------
+# Compile the following
+SET(HAVE_COMBOREDUCT 1)
+SET(HAVE_FEATURE_SELECTION 1)
+SET(HAVE_MOSES 1)
+SET(HAVE_UTIL 1)
+
+# Do not compile the following
+SET(HAVE_ATOMSPACE 0)
+SET(HAVE_ATTENTION 0)
+SET(HAVE_CYTHON 0)
+SET(HAVE_DIMEMBED 0)
+SET(HAVE_EMBODIMENT 0)
+SET(HAVE_HYPERTABLE 0)
+SET(HAVE_GUILE 0)
+SET(HAVE_SERVER 0)
+SET(HAVE_SPATIAL_TOOLS 0)
+SET(HAVE_PERSIST 0)
+SET(HAVE_UBIGRAPH 0)
+SET(HAVE_WEB 0)
+# --------------------------------------------------------------------------------
+
+
 ADD_SUBDIRECTORY(lib)
 
 ADD_CUSTOM_TARGET(tests)
@@ -663,7 +687,6 @@ ELSE (DOXYGEN_FOUND)
 ENDIF (DOXYGEN_FOUND)
 
 # Show a summary of what we got
-
 
 SUMMARY_ADD("AtomSpace" "A weighted and typed hypergraph database" HAVE_ATOMSPACE)
 SUMMARY_ADD("Attention" "Agents for attention allocation dynamics" HAVE_ATTENTION)
